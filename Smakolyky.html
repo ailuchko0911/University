@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Смаколики</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Магазин</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Продукти</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product-grid">
+      <div class="product-card" data-category="desserts">
+        <img src="https://rud.ua/uploads/under_recipe/600x300_5fc4efe48010f.jpg" alt="Фруктове фламбе з морозивом">
+        <p>Фруктове фламбе з морозивом</p>
+        <label for="calories-flambe">Кількість кілокалорій:</label>
+        <input type="number" id="calories-flambe1" name="calories-flambe1" value="439">
+      </div>
+      <div class="product-card" data-category="desserts">
+        <img src="https://rud.ua/uploads/under_recipe/Recept_yabluchnij_krambl_600%D1%85300_6156f564dc80c.jpg" alt="Яблучний крамбл">
+        <p>Яблучний крамбл</p>
+        <label for="calories-krambl">Кількість кілокалорій:</label>
+        <input type="number" id="calories-krambl" name="calories-krambl" value="357">
+      </div>
+      <div class="product-card" data-category="cakes">
+        <img src="https://rud.ua/uploads/under_recipe/867404.jpg" alt="Домашній торт з вишнями">
+        <p>Домашній торт з вишнями</p>
+        <label for="calories-tort1">Кількість кілокалорій:</label>
+        <input type="number" id="calories-tort1" name="calories-tort1" value="811">
+      </div>
+      <div class="product-card" data-category="cakes">
+        <img src="https://rud.ua/uploads/under_recipe/maxresdefault%20(4).jpg" alt="Шоколадний торт з вишнями">
+        <p>Шоколадний торт з вишнями</p>
+        <label for="calories-tort2">Кількість кілокалорій:</label>
+        <input type="number" id="calories-tort2" name="calories-tort2" value="753">
+      </div>
+      <div class="product-card" data-category="cakes">
+        <img src="https://rud.ua/uploads/under_recipe/01.jpg" alt="Сметанник">
+        <p>Сметанник</p>
+        <label for="calories-smetannik">Кількість кілокалорій:</label>
+        <input type="number" id="calories-smetannik" name="calories-smetannik" value="691">
+      </div>
+    </div>
+
+    <aside>
+      <h2>Фільтри</h2>
+      <form id="filter-form">
+        <label for="category">Категорія:</label>
+        <select name="category" id="category">
+          <option value="all">Усі</option>
+          <option value="pies">Пироги</option>
+          <option value="cakes">Торти</option>
+          <option value="desserts">Десерти</option>
+        </select>
+        
+        <label for="calories">Кількість кілокалорій:</label>
+        <input type="range" id="calories" name="calories" min="0" max="1000" value="50">
+
+        <button type="submit">Застосувати</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Контактна інформація</h3>
+                <p>Адреса: вулиця Богдана Хмельницького 11, Київ, Україна</p>
+                <p>Телефон: +380 50 123 45 67</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Соціальні мережі</h3>
+                <ul class="social-icons">
+                    <li><a href="http://www.facebook.com"><img src="facebook_icon_url" alt="facebook"></a></li>
+                    <li><a href="http://www.twitter.com"><img src="twitter_icon_url" alt="twitter"></a></li>
+                    <li><a href="http://www.instagram.com"><img src="instagram_icon_url" alt="instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Посилання</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Послуги</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Ресурси</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Часті запитання</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Еко-Маркет. Всі права захищено.</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#">Умови використання</a> | <a href="#">Політика конфіденційності</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
